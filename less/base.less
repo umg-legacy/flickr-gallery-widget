@@ -1,0 +1,89 @@
+// Base styles
+// -------------------------
+
+// Apply a natural box layout model to all elements
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #333;
+}
+
+body {
+    color: #333;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+// Links
+a {
+    color: #333;
+
+    &:hover {
+        color: #444;
+    }
+
+    &:visited {
+        color: #555;
+    }
+}
+
+// Selection highlight
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+img {
+    vertical-align: middle;
+}
+
+// Remove default fieldset styles
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+// Allow only vertical resizing of textareas
+textarea {
+    resize: vertical;
+}
+
+// Remove margin and padding from nav ul/ols
+nav {
+
+    ul,
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// Page styles (not part of widget)
+// -------------------------
+[role="main"] {
+    width: 460px;
+    margin: 50px auto 20px;
+    padding: 20px 20px 40px;
+    background-color: #eee;
+    border: 2px solid #ccc;
+
+    h1 {
+        margin: 0 0 10px;
+    }
+}
