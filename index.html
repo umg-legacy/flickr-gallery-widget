@@ -1,42 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Flickr Gallery Widget</title>
-  <meta name="description" content="A simple Flickr gallery widget">
-  <meta name="author" content="Universal Music Group">
-  <link rel="stylesheet" href="css/normalise.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <!--[if lt IE 9]>
-    <script src="js/html5-shiv.js"></script>
-  <![endif]-->
+    <meta charset="utf-8">
+    <title>Flickr Gallery Widget</title>
+    <meta name="description" content="A simple JavaScript Flickr gallery widget written in HTML5.">
+    <meta name="author" content="Universal Music Group">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
-  <div role="main">
+    <div role="main">
 
-    <h1>Flickr Gallery Widget</h1>
-    <p>A simple JavaScript Flickr gallery widget written in HTML5.</p>
+        <h1>Flickr Gallery Widget</h1>
+        <p>A simple JavaScript Flickr gallery widget written in HTML5.</p>
 
-    <aside class="flickr-gallery-widget">
-      <h1></h1>
-      <p></p>
-      <ul class="images"></ul>
-      <nav class="gallery-nav">
-        <ul>
-          <li class="prev"><a href="#">Prev</a></li>
-          <li class="next"><a href="#">Next</a></li>
-        </ul>
-      </nav>
-    </aside>
+        <aside class="flickr-gallery-widget">
+            <h1></h1>
+            <p></p>
+            <ul class="images"></ul>
+            <nav class="gallery-nav">
+                <ul>
+                    <li class="prev"><a href="#">Prev</a></li>
+                    <li class="next"><a href="#">Next</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-  </div>
+    </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.1.min.js"><\/script>')</script>
 
-  <script src="js/jquery-cycle-lite.js"></script>
-  <script src="js/jquery-flickr-gallery-widget.js"></script>
+    <script src="js/vendor/jquery-cycle-lite.js"></script>
+    <script src="js/jquery-flickr-gallery-widget.js"></script>
 
 </body>
 </html>

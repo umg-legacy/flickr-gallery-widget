@@ -1,0 +1,109 @@
+// Widget styles
+// -------------------------
+.flickr-gallery-widget {
+    width: 293px;
+    height: 197px;
+    position: relative;
+    color: #fff;
+    background-color: #000;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+
+    // Title
+    h1 {
+        position: absolute;
+        z-index: 21;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 13px 0 9px;
+        font-size: 13px;
+        font-weight: normal;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+
+        a {
+
+            &:before {
+                content: "« ";
+            }
+        }
+    }
+
+    // Description
+    p {
+        display: none; // Hide by default
+    }
+
+    // Links
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // Flickr images
+    .images {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        // Force height of images
+        img {
+            height: 197px;
+        }
+    }
+
+    // Gallery navigation
+    .gallery-nav {
+        display: none; // Hide by default
+
+        li {
+            position: absolute;
+            top: 76px;
+            z-index: 20;
+            list-style: none;
+
+            a {
+                width: 15px;
+                height: 45px;
+                background: #232323 url(../img/arrows-sprite.png) no-repeat;
+                display: block;
+                text-indent: -999em;
+                overflow: hidden;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+
+                &:hover {
+                    background-color: #2b2b2b;
+                }
+            }
+        }
+
+        // Previous arrow
+        .prev {
+            left: 10px;
+
+            a {
+                background-color: #232323;
+                background-position: 4px 15px;
+            }
+        }
+
+        // Next arrow
+        .next {
+            right: 10px;
+
+            a {
+                background-color: #232323;
+                background-position: -6px 15px;
+            }
+        }
+    }
+}
